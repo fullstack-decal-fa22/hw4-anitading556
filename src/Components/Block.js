@@ -2,7 +2,7 @@ import '../Styles/Block.css';
 import React from 'react';
 
 const Block = (props) => {
-    /* TODO */
+    
     const styles = {backgroundColor: props.color}
 
     return (
