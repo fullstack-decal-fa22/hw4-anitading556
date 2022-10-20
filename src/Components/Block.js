@@ -3,16 +3,19 @@ import React from 'react';
 
 const Block = (props) => {
     /* TODO */
+    const styles = {backgroundColor: props.color}
 
     return (
         // ignore this data-testid, it's purely for testing :)
         <div data-testid='main-component'>
             {/* You'll notice pre-assigned class names 'post' and 'caption', 
-            we took care of the basic block styling! 
+            we took care of the basic b;block styling! 
             If curious, check out the css in Styles/Block.css */}
             {/* Refer to hint if stuck on how to color the posts */}
-            <div className="post"></div>
-            <div className="caption"></div>
+            <div className="post" style={styles}></div>
+            <div className="caption">
+                {props.color}
+            </div>
         </div>
     );
 }
